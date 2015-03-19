@@ -6,7 +6,6 @@ import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
-import javax.mail.Transport;
 import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -107,6 +106,7 @@ public class Gmail {
 		if (Gmail.body == null) {
 			Gmail.body = "<h1>body gmail object</h1><p>it's a simple test</p>";
 		}
+		generateMailMessage.setContent(Gmail.body, "text/html");
 		javax.mail.Transport.send(generateMailMessage);
 		return success;
 	}
