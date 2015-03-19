@@ -1,7 +1,7 @@
 # java-Gmail-smpt-mail-sender
 A simple class to send emails by smtp protocol
 
-# how use (a very smaple example).
+## how use (a very smaple example).
 ```java
 Gmail.send(
 	"login", "my.user@gmail.com",
@@ -12,7 +12,7 @@ Gmail.send(
 );
 ```
 
-# Sample 2 (config and after send).
+# #Sample 2 (config and after send).
 ```java
 //Config whit alias support
 Gmail.config(
