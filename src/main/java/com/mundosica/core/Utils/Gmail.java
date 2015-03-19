@@ -107,10 +107,7 @@ public class Gmail {
 		if (Gmail.body == null) {
 			Gmail.body = "<h1>body gmail object</h1><p>it's a simple test</p>";
 		}
-		generateMailMessage.setContent(Gmail.body, "text/html");
-		Transport transport = getMailSession.getTransport("smtps");
-		Transport.send(generateMailMessage);
-		transport.close();
+		javax.mail.Transport.send(generateMailMessage);
 		return success;
 	}
 
