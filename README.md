@@ -14,17 +14,17 @@ Gmail.send(
 
 # Sample 2 (config and after send).
 ```java
-//Config
+//Config whit alias support
 Gmail.config(
-	"username", "my.user@gmail.com", //alias de login
-	"pass", "**secret**", //alias de password
+	"username", "my.user@gmail.com", //alias of login
+	"pass", "**secret**", //alias of password
 	"to", "edw_inkisidor@hotmail.com",
 	"cc", "chanerec@gmail.com",
 	"bcc", "eymard@gmail.com"
 );
 // Sending
 Gmail.send(
-	"title", "second test",//alias de subject
+	"title", "second test",//alias of subject
 	"msg", "<h1>other email</h1><p>success!!<p>"
 );
 ```
