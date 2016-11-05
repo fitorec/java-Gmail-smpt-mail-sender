@@ -9,11 +9,11 @@ public class GmailTest {
 		Gmail.send(
 				"login", "some.user@gmail.com",
 				"password", "secret",
-				"to", "edw_inkisidor@hotmail.com",
-				"cc", "chanerec@gmail.com",
-				"bcc", "eymard@gmail.com",
-				"subject", "prueba de email",
-				"body", "<h1>Esto es una prueba de envio de correos</h1><p>exitosa!!</p>"
+				"to", "destinatario@hotmail.com", //Destino
+				"cc", "con_copia@gmail.com",  //Destino (copia)
+				"bcc", "copia_oculta@mail.com",  //Destino (copia oculta)
+				"subject", "prueba de email", //Destino (copia oculta)
+				"body", "<h1>Esto es una prueba de envio de correos</h1><p>exitosa!!</p>" //Cuerpo del mensaje
 		);
 	}
 	
